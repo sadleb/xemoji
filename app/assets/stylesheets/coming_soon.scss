@@ -1,0 +1,63 @@
+// Place all the styles related to the ComingSoon controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+  background: url(asset-path('ComingSoonBackground.png')) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+p ol ul td {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.social-nav{
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+
+.social-nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 180px;
+}
+
+.social-nav li{
+  margin-bottom: 5px;
+}
+
+.social-nav .social-nav-item{
+  height: 30px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.social-nav .social-icon{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-right: 10px;
+}
+
+.social-nav .social-icon.twitter{
+  background: url(asset-path('twitter_icon.png')) no-repeat;
+  background-size: cover;
+}
+
+.social-nav .social-icon.instagram{
+  background: url(asset-path('instagram_icon.png')) no-repeat;
+  background-size: cover;
+}
+

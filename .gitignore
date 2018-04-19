@@ -2,6 +2,8 @@
 .unicorn.sh 
 log
 config/*.yml
+config/*.yml.enc
+config/master.key
 db
 vendor/bundle
 public/assets
@@ -60,6 +62,7 @@ build-iPhoneSimulator/
 /_yardoc/
 /doc/
 /rdoc/
+/storage/
 
 ## Environment normalization:
 /.bundle/

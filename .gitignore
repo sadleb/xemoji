@@ -7,6 +7,10 @@ config/*.yml.enc
 config/master.key
 vendor/bundle
 public/assets
+connect_xemoji.sh
+connect_xemoji_root.sh
+xemoji_ssh
+xemoji_ssh.pub
 
 # See https://help.github.com/articles/ignoring-files for more about ignoring files.
 #

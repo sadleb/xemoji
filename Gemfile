@@ -7,7 +7,12 @@ ruby '2.5.0'
 
 # See https://github.com/twbs/bootstrap-sass for instructions
 gem 'bootstrap-sass', '~> 3.3.7'
+gem 'bootstrap_form'
 gem 'jquery-rails'
+
+# Authentication gem
+gem 'devise'
+
 # END XEmoji Specific
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

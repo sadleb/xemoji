@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
   get 'coming_soon/index'
-  root 'coming_soon#index'
+  #root 'coming_soon#index'
+  root 'pages#index'
 
   resources :users
 

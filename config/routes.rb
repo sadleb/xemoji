@@ -1,10 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'coming_soon/index'
-  #root 'coming_soon#index'
   root 'pages#index'
-
-  resources :users
 
   # Registration, login routes.
   devise_for :users, :controllers => {:registrations => "registrations"}
@@ -12,6 +8,10 @@ Rails.application.routes.draw do
     get 'login', to: 'devise/sessions#new'
     get 'signup', to: 'devise/registrations#new'
   end
+
+  # Make sure the users routes go after the devise routes so that devise routes take precendence.
+  # E.g. if you do users/sign_out but the order is switched, it thinks sign_out is the id
+  resources :users
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

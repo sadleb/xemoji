@@ -12,10 +12,7 @@
   </head>
 
   <body>
-    <!-- TODO: remove me once coming soon page isn't at root path -->
-    <% unless current_page?(root_path) %>
-      <%= render 'layouts/navigation' %>
-    <% end %>
+    <%= render 'layouts/navigation' %>
     <%= yield %>
   </body>
 </html>

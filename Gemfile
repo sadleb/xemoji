@@ -69,6 +69,16 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+
+  # Xemoji specific 
+  # Using the testing setup mentioned in this tutorial: https://medium.freecodecamp.org/lets-create-an-intermediate-level-ruby-on-rails-application-d7c6e997c63f
+  gem 'rspec-rails', '~> 3.6'
+  gem 'factory_girl_rails'
+  gem 'rails-controller-testing'
+  gem 'headless'
+  gem 'poltergeist' # Relies on PhantomJS. Installed like this: brew install phantomjs
+  gem 'database_cleaner' # Needed to clean test database after JavaScript tests run since at time of writing it doesn't happen automatically.
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

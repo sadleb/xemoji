@@ -11,7 +11,9 @@ Rails.application.routes.draw do
 
   # Make sure the users routes go after the devise routes so that devise routes take precendence.
   # E.g. if you do users/sign_out but the order is switched, it thinks sign_out is the id
-  resources :users
+  resources :users do
+    resources :xemojis
+  end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

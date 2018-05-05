@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<h1>User Settings</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Filename</th>
+      <!-- Not showing URLs in HTML. Only by JSON when authenticated to prevent people from finding them out. -->
+      <th>Keywords</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @xemojis.each do |xemoji| %>
+      <tr>
+        <td><%= xemoji.category %></td>
+        <td><%= xemoji.filename %></td>
+        <td><%= xemoji.keywords %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

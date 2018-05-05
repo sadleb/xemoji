@@ -5,5 +5,9 @@ FactoryGirl.define do
     sequence(:email) { |n| "test#{n}@test.com" }
     password '123456'
     password_confirmation '123456'
+    after(:create) do |user|
+      user.xemojis << FactoryGirl.build(:xemoji)
+      user.xemojis << FactoryGirl.build(:xemoji)
+    end
   end
 end

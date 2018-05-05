@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
+  #TODO: require login. e.g. before_action :redirect_if_not_signed_in
+
   # GET /users
   # GET /users.json
   def index

@@ -15,5 +15,14 @@ Rails.application.routes.draw do
     resources :xemojis
   end
 
+  # Expose the above users and xemojis through a /api/v1 path
+  namespace :api do
+    namespace :v1 do
+      resources :users do
+        resources :xemojis
+      end
+    end
+  end
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

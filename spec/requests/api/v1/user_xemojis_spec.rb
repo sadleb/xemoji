@@ -7,8 +7,7 @@ RSpec.describe "User XEmojis API", :type => :request do
 
     headers = { "ACCEPT" => "application/json" }
 
-    # TODO: convert to '/api/v1/users/#{user.id}/xemojis'
-    get "/users/#{user.id}/xemojis", :headers => headers
+    get "/api/v1/users/#{user.id}/xemojis", :headers => headers
 
     # test for the 200 status-code
     expect(response).to be_successful
